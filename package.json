@@ -1,0 +1,22 @@
+{
+  "name": "satheeshnatarajan.github.io",
+  "version": "1.0.0",
+  "description": "About Satheesh Natarajan",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satheeshnatarajan/satheeshnatarajan.github.io.git"
+  },
+  "author": "Satheesh Natarajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satheeshnatarajan/satheeshnatarajan.github.io/issues"
+  },
+  "homepage": "https://github.com/satheeshnatarajan/satheeshnatarajan.github.io#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}

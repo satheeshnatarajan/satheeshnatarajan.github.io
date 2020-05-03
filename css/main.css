@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    color: rgba(255,255,255,.55);
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #28313b;
+    background-image: linear-gradient(180deg, #28313b 0%, #26262d 74%);
+}
+.fa {
+    color: rgba(255,255,255,.55);
+}
+.page-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.card-started {
+    width: 440px;
+}
+.card-started:before {
+    box-shadow: 10px 10px 15px rgba(0,0,0,.1);
+}
+.profile-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 560px;
+    padding: 2rem;
+    width: 100%;
+}
+.profile {
+    position: relative;
+    overflow: hidden;
+    height: 88vh;
+    border-radius: 4px;
+}
+.profile-pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 52%;
+    background: url("../images/Satheesh_Natarajan.jpg") center center no-repeat;
+    background-size: cover;
+}
+.profile,
+.profile-pic:before,
+.profile-pic:after {
+    background: #31313a;
+}
+.profile-pic:before, .profile-pic:after {
+    content: '';
+    position: absolute;
+    bottom: -63%;
+    width: 100%;
+    height: 70%;
+}
+.profile-pic:before {
+    left: -25%;
+    transform: rotate(8deg);
+    -webkit-transform: rotate(8deg);
+}
+.profile-pic:after {
+    right: -25%;
+    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+}
+.profile-detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 75% 0 20px;
+}
+.username {
+    position: relative;
+    font-size: 28px;
+}
+.designation {
+    margin-top: 10px;
+    color: darkorange;
+}
+.social-icons {
+    position: relative;
+    margin-top: 20px;
+    color: #555555;
+}
+.social-icons a {
+    margin: 0 6px;
+}
+.skills {
+    position: relative;
+    text-align: center;
+    line-height: 2rem;
+}
+.skills .icon {
+    display: inline-block;
+    padding: 0 3px;
+}
+.links {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.links .buttons {
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255,255,255,.55);
+}
+.links .divider {
+    flex-grow: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+}
+.buttons .fa {
+    margin-left: 8px;
+}
+
+@media (max-width: 576px) {
+    .card-started {
+        width: 100%;
+    }
+    .profile {
+        height: 100vh;
+    }
+}
